@@ -1,0 +1,28 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  datasource:
+    driver-class-name: org.h2.Driver
+    password:
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        generate_statistics: false
+        id:
+          new_generator_mappings: false
+        jdbc:
+          batch_size: 200
+        order_inserts: true
+    show-sql: false
+event:
+  summary:
+    fileLocation: src/test/resources/test.xlsx
+    outputFileLocation: src/test/resources/Processed
+    shouldMoveFile: false

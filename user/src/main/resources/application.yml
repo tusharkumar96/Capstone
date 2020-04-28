@@ -1,0 +1,33 @@
+spring:
+  #  security:
+  #    user:
+  #      password: abcd
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: password
+    url: jdbc:mysql://localhost:3306/application_user
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+        generate_statistics: true
+        id:
+          new_generator_mappings: false
+        jdbc:
+          batch_size: 200
+        order_inserts: true
+    show-sql: true
+
+jwt:
+  secretKey: QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
+  tokenPrefix: Bearer
+server:
+  port: 8083
+
+
+
+

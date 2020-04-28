@@ -1,0 +1,29 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: password
+    url: jdbc:mysql://localhost:3306/event
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+        generate_statistics: true
+        id:
+          new_generator_mappings: false
+        jdbc:
+          batch_size: 200
+        order_inserts: true
+    show-sql: true
+
+event:
+  summary:
+    fileLocation: /home/raju/Programming/test.xlsx
+    outputFileLocation: /home/raju/Programming/Processed
+    shouldMoveFile: true
