@@ -20,7 +20,7 @@
         <json-path.version>${rest-assured.version}</json-path.version>
         <xml-path.version>${rest-assured.version}</xml-path.version>
         <poi-ooxml.version>${poi.version}</poi-ooxml.version>
-        <poi.version>3.11</poi.version>
+        <poi.version>4.1.1</poi.version>
         <spring-batch-excel.version>0.5.0-SNAPSHOT</spring-batch-excel.version>
         <mysql-connector-java.version>8.0.19</mysql-connector-java.version>
     </properties>
